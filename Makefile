@@ -5,3 +5,6 @@ init:
 
 serve:
 	$(HUGOPATH)/hugo server
+
+build:
+	$(HUGOPATH)/hugo --config=config.yml
