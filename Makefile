@@ -7,4 +7,4 @@ serve:
 	$(HUGOPATH)/hugo server
 
 build:
-	$(HUGOPATH)/hugo --config=config.yml
+	$(HUGOPATH)/hugo --config=config.toml
