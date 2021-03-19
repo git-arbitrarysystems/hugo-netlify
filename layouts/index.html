@@ -14,7 +14,8 @@
   <body>
     <h1>Nice. It's looking good already.</h1>
     <ul>
-      {{ range (where .Pages "Section" "blog") }}
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+      {{ range $paginator.Pages }}
       <li>
         <a href="{{ .RelPermalink }}">
           {{ .Title }}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+
+
+  <body>
+
+<ul>
+                      
+                        {{ range (where .Data.Pages "Type" "blog") }}
+                        
+             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                    
+                        {{ end }}
+
+                     
+
+                    </ul>
+
+
+  </body>
+</html>
